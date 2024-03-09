@@ -54,7 +54,7 @@ function newtab() {
   div.id = 'tab'+t;
   div.className = 'tabcontent';
   div.style.display = 'none';
-  var closeBtn = document.createElement('span');
+  var closeBtn = document.createElement('button');
   closeBtn.onclick = 'close()';
   closeBtn.className = 'topright';
   closeBtn.innerHTML = '[x]';
@@ -66,7 +66,7 @@ function newtab() {
   div.appendChild(fullBtn);
   var iframe = document.createElement('iframe');
   iframe.src = 'https://www.google.com/webhp?igu=1';
-  iframe.height = 500;
+	iframe.height = '500';
   iframe.width = '100%';
   iframe.id = 'iweb'+t;
   iframe.allowFullscreen = true;
