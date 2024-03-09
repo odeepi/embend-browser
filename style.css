@@ -1,3 +1,7 @@
+html {
+	cursor: url('cursors/default.png'),auto;
+
+}
 body{
     font-family:Lato,sans-serif
 }
@@ -46,4 +50,8 @@ input[type=text]{
 input[type=text].focus,input[type=text]:focus{
     border:1px solid #707070;
     box-shadow:0 0 5px 1px #969696
+}
+iframe {
+	cursor: url('cursors/default.png'),auto;
+	cursor: url('cursors/pointer.png'),pointer;
 }
