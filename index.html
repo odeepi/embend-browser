@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+  <title>iframe-browser</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<button onclick="open_window()"></button>
+<body>
+  <div class="tab">
+    Address:&nbsp;<input type="text" id="address"></input>
+    <button onclick="load()" class="btn">Load</button>
+    <button onclick="newtab()" class="btn">New tab</button><br>
+    <div id="tabbtns">
+      <button class="btn active" onclick="openTab(1)" id="tabb1">Tab 1</button>
+    </div>
+  </div>
+  <div id="tabs">
+    <div id="tab1" class="tabcontent" style="display:block">
+      <span onclick="close()" class="topright">[x]</span>
+      <span onclick="fullscreen(byId('iweb'+currentTab))" class="topright2">[+]</span>
+      <iframe src="https://www.google.com/webhp?igu=1" height="500" width="100%" id="iweb1" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+
+</html>
