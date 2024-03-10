@@ -59,10 +59,10 @@ function newtab() {
   closeBtn.className = 'topright';
   closeBtn.innerHTML = '[x]';
   div.appendChild(closeBtn);
-  var fullBtn = document.createElement('span');
-  fullBtn.onclick = 'close()';
+  var fullBtn = document.createElement('button');
+  fullBtn.onclick = "fullscreen(byId('iweb'+currentTab))";
   fullBtn.className = 'topright2';
-  fullBtn.innerHTML = '[+]';
+  fullBtn.innerHTML = '<ion-icon name="resize-outline"></ion-icon>';
   div.appendChild(fullBtn);
   var iframe = document.createElement('iframe');
   iframe.src = 'https://www.google.com/webhp?igu=1';

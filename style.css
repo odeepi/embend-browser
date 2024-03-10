@@ -38,9 +38,11 @@ div.tab{
     border-top:none
 }
 .topright:hover{
+	  cursor: url('cursors/pointer.png'),pointer;
     color:red;
 }
 .topright2:hover{
+	  cursor: url('cursors/pointer.png'),pointer;
     color:#00f
 }
 input[type=text]{
@@ -55,4 +57,10 @@ input[type=text].focus,input[type=text]:focus{
 }
 iframe {
 	cursor: url('cursors/default.png'),auto;
+}
+input, textarea, button, select, a {
+		-webkit-tap-highlight-color: transparent;
+}
+textarea:focus, input:focus{
+		outline: none;
 }

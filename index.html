@@ -21,10 +21,11 @@
   <div id="tabs">
     <div id="tab1" class="tabcontent" style="display:block">
       <button onclick="close()" class="topright">[x]</button>
-      <span onclick="fullscreen(byId('iweb'+currentTab))" class="topright2">[+]</span>
+      <button onclick="fullscreen(byId('iweb'+currentTab))" class="topright2"><ion-icon name="resize-outline"></ion-icon></button>
       <iframe src="https://www.google.com/webhp?igu=1" height="600" width="100%" id="iweb1" allowfullscreen></iframe>
     </div>
   </div>
 </body>
-
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
